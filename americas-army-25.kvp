@@ -25,8 +25,8 @@ App.WorkingDir=System
 App.ExecutableWin=Server.exe
 App.ExecutableLinux=/usr/bin/wine
 App.CommandLineArgs={{$PlatformArgs}}
-App.WindowsCommandLineArgs=GLOBAL {{mapname}} -Port={{port}} -Multihome={{multihome}} -ID={{processid}} {{ExtraArgs}}
-App.LinuxCommandLineArgs=Server.exe GLOBAL {{mapname}} -Port={{port}} -Multihome={{multihome}} -ID={{processid}} {{ExtraArgs}}
+App.WindowsCommandLineArgs=GLOBAL {{StartMap}} {{ExtraArgs}}
+App.LinuxCommandLineArgs=Server.exe GLOBAL {{StartMap}} {{ExtraArgs}}
 App.MonitorChildProcessName=^.*(Server\.exe|serverx\.exe|aasrv[0-9]+\.exe|cmd\.exe|wineserver).*$
 App.MonitorDirectChildOnly=False
 App.DumpFullChildProcessTree=True
