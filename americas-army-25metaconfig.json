@@ -2,19 +2,9 @@
   {
     "ConfigFile": "System/aa25.ini",
     "AutoMap": true,
-    "ConfigType": "kvp",
-    "ConfigFormat": "kvp",
-    "ConfigMappings": {
-      "port": "GamePort",
-      "multihome": "MultiHome",
-      "processid": "ProcessID",
-      "adminpassword": "AdminPassword",
-      "playerslots": "PlayerSlots",
-      "roundsmatch": "RoundsMatch",
-      "roundlength": "RoundLength",
-      "servername": "ServerName",
-      "punkbuster": "PunkBuster",
-      "hackhunter": "HackHunter"
-    }
+    "Importable": true,
+    "ConfigType": "ini",
+    "ConfigFormat": "{0}={1}",
+    "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$"
   }
 ]
