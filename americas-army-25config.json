@@ -1,0 +1,145 @@
+[
+  {
+    "DisplayName": "Map Name",
+    "Category": "Server",
+    "Description": "AAO25 map name without .aao. Example: bridge, insurgent_camp, radio_tower",
+    "Keywords": "map,mapname,level",
+    "FieldName": "MapName",
+    "InputType": "text",
+    "ParamFieldName": "MapName",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "bridge"
+  },
+  {
+    "DisplayName": "Game Port",
+    "Category": "Network",
+    "Description": "Main UDP game port. Default is 1716.",
+    "Keywords": "port,gameport,network",
+    "FieldName": "GamePort",
+    "InputType": "number",
+    "ParamFieldName": "GamePort",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "1716"
+  },
+  {
+    "DisplayName": "Query Port",
+    "Category": "Network",
+    "Description": "Secondary/query UDP port. Usually Game Port + 1. Default is 1717.",
+    "Keywords": "query,port,network",
+    "FieldName": "QueryPort",
+    "InputType": "number",
+    "ParamFieldName": "QueryPort",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "1717"
+  },
+  {
+    "DisplayName": "Multihome IP",
+    "Category": "Network",
+    "Description": "IP address for the server to bind to. Usually leave as 0.0.0.0.",
+    "Keywords": "ip,multihome,binding,bind",
+    "FieldName": "MultiHome",
+    "InputType": "text",
+    "ParamFieldName": "MultiHome",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "0.0.0.0"
+  },
+  {
+    "DisplayName": "Process ID",
+    "Category": "Advanced",
+    "Description": "AAO25 wrapper process ID. Default is 001.",
+    "Keywords": "process,id,aa25",
+    "FieldName": "ProcessID",
+    "InputType": "text",
+    "ParamFieldName": "ProcessID",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "001"
+  },
+  {
+    "DisplayName": "Extra Arguments",
+    "Category": "Advanced",
+    "Description": "Additional command line arguments passed to the AAO25 wrapper.",
+    "Keywords": "extra,args,arguments,commandline",
+    "FieldName": "ExtraArgs",
+    "InputType": "text",
+    "ParamFieldName": "ExtraArgs",
+    "IncludeInCommandLine": true,
+    "DefaultValue": ""
+  },
+  {
+    "DisplayName": "Server Name",
+    "Category": "AA25 Config",
+    "Description": "Server name written to System/aa25.ini.",
+    "Keywords": "server,name,hostname",
+    "FieldName": "ServerName",
+    "InputType": "text",
+    "ParamFieldName": "ServerName",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "Another aao25.com Server"
+  },
+  {
+    "DisplayName": "Admin Password",
+    "Category": "AA25 Config",
+    "Description": "Admin password written to System/aa25.ini.",
+    "Keywords": "admin,password",
+    "FieldName": "AdminPassword",
+    "InputType": "password",
+    "ParamFieldName": "AdminPassword",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "aa25dedisrv"
+  },
+  {
+    "DisplayName": "Player Slots",
+    "Category": "AA25 Config",
+    "Description": "Maximum player slots written to System/aa25.ini.",
+    "Keywords": "players,slots,maxplayers",
+    "FieldName": "PlayerSlots",
+    "InputType": "number",
+    "ParamFieldName": "PlayerSlots",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "26"
+  },
+  {
+    "DisplayName": "Rounds Per Match",
+    "Category": "AA25 Config",
+    "Description": "Rounds per match written to System/aa25.ini.",
+    "Keywords": "rounds,match",
+    "FieldName": "RoundsMatch",
+    "InputType": "number",
+    "ParamFieldName": "RoundsMatch",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "16"
+  },
+  {
+    "DisplayName": "Round Length",
+    "Category": "AA25 Config",
+    "Description": "Round length in minutes written to System/aa25.ini.",
+    "Keywords": "round,length,time",
+    "FieldName": "RoundLength",
+    "InputType": "number",
+    "ParamFieldName": "RoundLength",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "7"
+  },
+  {
+    "DisplayName": "PunkBuster",
+    "Category": "AA25 Config",
+    "Description": "Enable or disable PunkBuster in aa25.ini. 0 = disabled, 1 = enabled.",
+    "Keywords": "punkbuster,pb",
+    "FieldName": "PunkBuster",
+    "InputType": "checkbox",
+    "ParamFieldName": "PunkBuster",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "0"
+  },
+  {
+    "DisplayName": "HackHunter",
+    "Category": "AA25 Config",
+    "Description": "Enable or disable HackHunter in aa25.ini. 0 = disabled, 1 = enabled.",
+    "Keywords": "hackhunter,anticheat",
+    "FieldName": "HackHunter",
+    "InputType": "checkbox",
+    "ParamFieldName": "HackHunter",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "1"
+  }
+]
