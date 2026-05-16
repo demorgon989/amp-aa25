@@ -30,7 +30,8 @@ App.LinuxCommandLineArgs=Server.exe GLOBAL {{mapname}} -Port={{port}} -Multihome
 App.MonitorChildProcessName=^.*(Server\.exe|serverx\.exe|aasrv[0-9]+\.exe|cmd\.exe|wineserver).*$
 App.MonitorDirectChildOnly=False
 App.DumpFullChildProcessTree=True
-App.AppSettings={"mapname":"bridge","port":"1716","queryport":"1717","multihome":"0.0.0.0","processid":"001","servername":"Another aao25.com Server","adminpassword":"aa25dedisrv","playerslots":"26","roundsmatch":"16","roundlength":"7","punkbuster":"0","hackhunter":"1","ExtraArgs":""}App.HasReadableConsole=True
+App.AppSettings={"mapname":"bridge","port":"1716","queryport":"1717","multihome":"0.0.0.0","processid":"001","servername":"Another aao25.com Server","adminpassword":"aa25dedisrv","playerslots":"26","roundsmatch":"16","roundlength":"7","punkbuster":"0","hackhunter":"1","ExtraArgs":""}
+App.HasReadableConsole=True
 App.HasWriteableConsole=True
 App.ApplicationReadyMode=Immediate
 App.ExitMethod=OS_CLOSE
