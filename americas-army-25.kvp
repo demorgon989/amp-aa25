@@ -4,36 +4,44 @@ Meta.OS=Windows, Linux
 Meta.Arch=x86_64
 Meta.Author=demorgon989
 Meta.URL=https://aao25.com/
-Meta.DisplayImageSource=url:https://raw.githubusercontent.com/demorgon989/amp-aa25/main/amp-aa25.png
 Meta.ConfigId=americas-army-25
+Meta.DisplayImageSource=url:https://raw.githubusercontent.com/demorgon989/amp-aa25/main/amp-aa25.png
 Meta.ConfigRoot=americas-army-25.kvp
 Meta.ConfigManifest=americas-army-25config.json
 Meta.MetaConfigManifest=americas-army-25metaconfig.json
 Meta.PortsManifest=americas-army-25ports.json
 Meta.MinAMPVersion=2.4.6.6
 Meta.ContainerPolicy=Supported
+Meta.SpecificDockerImage=cubecoders/ampbase:wine-stable
+Meta.ConfigReleaseState=NotSpecified
+Meta.NoCommercialUsage=False
+Meta.ConfigVersion=1
+Meta.AppConfigId=7d6a73a7-4f2a-4d3c-9b3f-0c01f3c3a525
 
 App.DisplayName=Americas Army 25 Assist
-App.RootDir=./
-App.BaseDirectory=./
+App.RootDir=./americas-army-25/
+App.BaseDirectory=./americas-army-25/
 App.WorkingDir=System
-App.ExecutableWin=System/Server.exe
-App.ExecutableLinux=wine
+App.ExecutableWin=Server.exe
+App.ExecutableLinux=/usr/bin/wine
+App.CommandLineArgs={{$PlatformArgs}}
 App.WindowsCommandLineArgs=GLOBAL {{MapName}} -Port={{GamePort}} -Multihome={{MultiHome}} -ID={{ProcessID}} {{ExtraArgs}}
 App.LinuxCommandLineArgs=Server.exe GLOBAL {{MapName}} -Port={{GamePort}} -Multihome={{MultiHome}} -ID={{ProcessID}} {{ExtraArgs}}
-App.CommandLineParameterDelimiter= 
+App.MonitorChildProcessName=^.*Server\.exe.*$
+App.MonitorDirectChildOnly=False
+App.DumpFullChildProcessTree=True
+App.AppSettings={"MapName":"bridge","GamePort":"1716","QueryPort":"1717","MultiHome":"0.0.0.0","ProcessID":"001","ServerName":"Another aao25.com Server","AdminPassword":"aa25dedisrv","PlayerSlots":"26","RoundsMatch":"16","RoundLength":"7","PunkBuster":"0","HackHunter":"1","ExtraArgs":""}
+App.AdminMethod=STDIO
+App.HasReadableConsole=True
+App.HasWriteableConsole=True
+App.ApplicationReadyMode=Immediate
 App.ExitMethod=OS_CLOSE
 App.ExitTimeout=30
-App.HasReadableConsole=true
-App.HasWritableConsole=true
-App.SupportsUniversalSleep=false
+App.UseLinuxIOREDIR=False
 App.ApplicationIPBinding=0.0.0.0
-App.Ports={{GamePort}},{{QueryPort}}
-
-App.AdminMethod=STDIO
-App.RCONConnectDelaySeconds=5
-App.RCONConnectRetrySeconds=5
-
-App.UpdateSources=[{"UpdateSourcePlatform":"All","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/demorgon989/amp-aa25/releases/download/aa25-server/aa25-server.zip","UpdateSourceTarget":"{{$FullBaseDir}}","UnzipUpdateSource":true,"OverwriteExistingFiles":true}]
-
-App.AppSettings={"MapName":"bridge","GamePort":"1716","QueryPort":"1717","MultiHome":"0.0.0.0","ProcessID":"001","ServerName":"Another aao25.com Server","AdminPassword":"aa25dedisrv","PlayerSlots":"26","RoundsMatch":"16","RoundLength":"7","PunkBuster":"0","HackHunter":"1","ExtraArgs":""}
+App.PrimaryApplicationPortRef=GamePort
+App.MaxUsers=26
+App.Compatibility=None
+App.EnvironmentVariables={"WINEPREFIX":"{{$FullRootDir}}.wine","WINEARCH":"win64","WINEDEBUG":"-all"}
+App.Ports=@IncludeJson[americas-army-25ports.json]
+App.UpdateSources=@IncludeJson[americas-army-25updates.json]
