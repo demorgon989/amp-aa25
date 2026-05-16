@@ -65,17 +65,20 @@
     "IncludeInCommandLine": true,
     "DefaultValue": ""
   },
-  {
-    "DisplayName": "Server Name",
-    "Category": "AA25 Config",
-    "Description": "Server name written to System/aa25.ini.",
-    "Keywords": "server,name,hostname",
-    "FieldName": "servername",
-    "InputType": "text",
-    "ParamFieldName": "servername",
-    "IncludeInCommandLine": false,
-    "DefaultValue": "Another aao25.com Server"
-  },
+{
+  "DisplayName": "Server Name",
+  "Category": "Server Settings",
+  "Description": "Sets the public AA25 server name.",
+  "Keywords": "server,name,hostname",
+  "FieldName": "ServerName",
+  "InputType": "text",
+  "IsFlagArgument": false,
+  "ParamFieldName": "servername",
+  "IncludeInCommandLine": false,
+  "SkipIfEmpty": false,
+  "DefaultValue": "Another aao25.com Server",
+  "EnumValues": {}
+},
   {
     "DisplayName": "Admin Password",
     "Category": "AA25 Config",
