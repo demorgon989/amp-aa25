@@ -2,15 +2,15 @@
   {
     "Protocol": "UDP",
     "Port": "1716",
-    "Ref": "GamePort",
+    "Ref": "port",
     "Name": "Game Port",
-    "Description": "Main AAO25 game port. aa25.ini refers to this as port."
+    "Description": "Main AAO25 game port."
   },
   {
     "Protocol": "UDP",
     "Port": "1717",
-    "Ref": "QueryPort",
+    "Ref": "queryport",
     "Name": "Query Port",
-    "Description": "AAO25 query/secondary game port. aa25.ini refers to this as port + 1."
+    "Description": "AAO25 query/secondary port."
   }
 ]
