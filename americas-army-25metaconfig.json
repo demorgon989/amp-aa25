@@ -1,0 +1,25 @@
+[
+  {
+    "ConfigFile": "System/aa25.ini",
+    "AutoMap": true,
+    "ConfigType": "ini",
+    "ConfigFormat": "ini",
+    "Subsections": [
+      {
+        "Heading": "",
+        "SettingMappings": {
+          "port": "GamePort",
+          "multihome": "MultiHome",
+          "processid": "ProcessID",
+          "adminpassword": "AdminPassword",
+          "playerslots": "PlayerSlots",
+          "roundsmatch": "RoundsMatch",
+          "roundlength": "RoundLength",
+          "servername": "ServerName",
+          "punkbuster": "PunkBuster",
+          "hackhunter": "HackHunter"
+        }
+      }
+    ]
+  }
+]
