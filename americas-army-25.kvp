@@ -27,7 +27,7 @@ App.ExecutableLinux=/usr/bin/wine
 App.CommandLineArgs={{$PlatformArgs}}
 App.WindowsCommandLineArgs=GLOBAL {{MapName}} -Port={{GamePort}} -Multihome={{MultiHome}} -ID={{ProcessID}} {{ExtraArgs}}
 App.LinuxCommandLineArgs=Server.exe GLOBAL {{MapName}} -Port={{GamePort}} -Multihome={{MultiHome}} -ID={{ProcessID}} {{ExtraArgs}}
-App.MonitorChildProcessName=^.*(Server\.exe|serverx\.exe).*$
+App.MonitorChildProcessName=^.*(Server\.exe|aasrv[0-9]+\.exe).*$
 App.MonitorDirectChildOnly=False
 App.DumpFullChildProcessTree=True
 App.AppSettings={"MapName":"bridge","GamePort":"1716","QueryPort":"1717","MultiHome":"0.0.0.0","ProcessID":"001","ServerName":"Another aao25.com Server","AdminPassword":"aa25dedisrv","PlayerSlots":"26","RoundsMatch":"16","RoundLength":"7","PunkBuster":"0","HackHunter":"1","ExtraArgs":""}
