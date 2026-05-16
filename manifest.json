@@ -1,32 +1,9 @@
-[
-  {
-    "ConfigFile": "americas-army-25.kvp",
-    "AutoMap": true,
-    "ConfigType": "kvp",
-    "ConfigFormat": "kvp"
-  },
-  {
-    "ConfigFile": "americas-army-25config.json",
-    "AutoMap": true,
-    "ConfigType": "config",
-    "ConfigFormat": "json"
-  },
-  {
-    "ConfigFile": "americas-army-25metaconfig.json",
-    "AutoMap": true,
-    "ConfigType": "metaconfig",
-    "ConfigFormat": "json"
-  },
-  {
-    "ConfigFile": "americas-army-25ports.json",
-    "AutoMap": true,
-    "ConfigType": "ports",
-    "ConfigFormat": "json"
-  },
-  {
-    "ConfigFile": "americas-army-25updates.json",
-    "AutoMap": true,
-    "ConfigType": "updates",
-    "ConfigFormat": "json"
-  }
-]
+{
+  "id": "7d6a73a7-4f2a-4d3c-9b3f-0c01f3c3a525",
+  "authors": ["demorgon989"],
+  "origin": "https://github.com/demorgon989/amp-aa25.git",
+  "url": "https://github.com/demorgon989/amp-aa25",
+  "imagefile": "",
+  "prefix": "",
+  "repotype": "AppTemplates"
+}
