@@ -25,13 +25,12 @@ App.WorkingDir=System
 App.ExecutableWin=Server.exe
 App.ExecutableLinux=/usr/bin/wine
 App.CommandLineArgs={{$PlatformArgs}}
-App.WindowsCommandLineArgs=GLOBAL {{MapName}} -Port={{GamePort}} -Multihome={{MultiHome}} -ID={{ProcessID}} {{ExtraArgs}}
-App.LinuxCommandLineArgs=Server.exe GLOBAL {{MapName}} -Port={{GamePort}} -Multihome={{MultiHome}} -ID={{ProcessID}} {{ExtraArgs}}
+App.WindowsCommandLineArgs=GLOBAL {{mapname}} -Port={{port}} -Multihome={{multihome}} -ID={{processid}} {{ExtraArgs}}
+App.LinuxCommandLineArgs=Server.exe GLOBAL {{mapname}} -Port={{port}} -Multihome={{multihome}} -ID={{processid}} {{ExtraArgs}}
 App.MonitorChildProcessName=^.*(Server\.exe|serverx\.exe|aasrv[0-9]+\.exe|cmd\.exe|wineserver).*$
 App.MonitorDirectChildOnly=False
 App.DumpFullChildProcessTree=True
-App.AppSettings={"MapName":"bridge","GamePort":"1716","QueryPort":"1717","MultiHome":"0.0.0.0","ProcessID":"001","ServerName":"Another aao25.com Server","AdminPassword":"aa25dedisrv","PlayerSlots":"26","RoundsMatch":"16","RoundLength":"7","PunkBuster":"0","HackHunter":"1","ExtraArgs":""}
-App.AdminMethod=STDIO
+App.AppSettings={"mapname":"bridge","port":"1716","queryport":"1717","multihome":"0.0.0.0","processid":"001","servername":"Another aao25.com Server","adminpassword":"aa25dedisrv","playerslots":"26","roundsmatch":"16","roundlength":"7","punkbuster":"0","hackhunter":"1","ExtraArgs":""}App.AdminMethod=STDIO
 App.HasReadableConsole=True
 App.HasWriteableConsole=True
 App.ApplicationReadyMode=Immediate
