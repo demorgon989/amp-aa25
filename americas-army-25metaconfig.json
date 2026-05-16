@@ -1,10 +1,10 @@
 [
   {
-    "ConfigFile": "americas-army-25/System/aa25.ini",
+    "ConfigFile": "System/aa25.ini",
     "AutoMap": true,
     "Importable": true,
-    "ConfigType": "kvp",
+    "ConfigType": "ini",
     "ConfigFormat": "{0}={1}",
-    "ConfigFormatRegex": "^(?<key>[^=]+?)=(?<value>.*?)$"
+    "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$"
   }
 ]
